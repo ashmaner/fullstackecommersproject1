@@ -17,9 +17,9 @@ const app = express()
 app.use(express.json())
 
 //dotenv config
-app.get('/', (req, res) => {
-  res.send('<h1>Welcome to Node Server</h1>')
-})
+// app.get('/', (req, res) => {
+//   res.send('<h1>Welcome to Node Server</h1>')
+// })
 
 app.use('/api', productRoutes)
 app.use('/api/users', usersRoutes)
