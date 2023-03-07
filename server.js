@@ -31,7 +31,7 @@ app.get('/api/config/paypal', (req, res) => {
 app.use(errorHandler)
 app.use(express.static(path.join(__dirname, './frontend/build')))
 
-app.get('*', function (req, res) {
+app.get('*',(req, res) => {
   res.sendFile(__dirname, './frontend/build/index.html')
 })
 
